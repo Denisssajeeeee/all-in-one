@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Unduh Semua — Downloader Media Sosial</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark"><span></span>ALL-IN-ONE DOWNLOADER</div>
+    <h1>Tempel tautan, unduh videonya</h1>
+    <p>Satu kotak untuk Instagram, TikTok, Facebook, dan YouTube. Tanpa watermark, tanpa ribet.</p>
+  </header>
+
+  <div class="panel">
+    <div class="platforms" id="platforms">
+      <button data-p="auto" class="active">🔎 Auto</button>
+      <button data-p="ig">Instagram</button>
+      <button data-p="tt">TikTok</button>
+      <button data-p="fb">Facebook</button>
+      <button data-p="yt">YouTube</button>
+    </div>
+
+    <div class="input-row">
+      <input type="text" id="urlInput" placeholder="Tempel link video di sini…">
+      <button class="go" id="goBtn">Proses</button>
+    </div>
+
+    <div class="status" id="status"></div>
+
+    <div class="result" id="result">
+      <div class="result-row">
+        <div class="thumb" id="thumbIcon">🎬</div>
+        <div class="meta">
+          <div class="t" id="resTitle">—</div>
+          <div class="s" id="resSub">—</div>
+        </div>
+        <button class="dl-btn" id="dlBtn">Unduh MP4</button>
+      </div>
+    </div>
+
+    <div class="note">
+      <b>Status:</b> sudah tersambung ke API <code>api.nexadev.my.id/api/aio</code>. Kalau tombol Unduh gagal, kemungkinan penyebabnya: link videonya privat/terhapus, format respons API berbeda dari yang diharapkan (cek console browser), atau API tersebut memblokir permintaan dari browser (CORS) — kalau itu terjadi, panggilan perlu dipindah ke backend.<br><br>
+      <b>Perlu diingat:</b> API key di kode ini bisa dilihat siapa saja lewat "view source" karena halaman ini berjalan di browser (klien). Aman untuk dipakai sendiri, tapi kalau halaman ini dibagikan ke publik, key-mu ikut terekspos.
+    </div>
+  </div>
+
+  <footer>Gunakan hanya untuk konten yang kamu punya hak mengunduhnya.</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
